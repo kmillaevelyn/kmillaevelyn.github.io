@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kamilla de Paula · Supply Chain · Data · AI</title>
 <meta name="description" content="Portfólio de Kamilla de Paula: Supply Chain, Dados e IA Aplicada. BCTec UNIFEI." />
-<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/181145750?v=4" />
+<link rel="icon" type="image/png" href="kmillaevelyn-site/assets/icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
 *{ margin:0; padding:0; box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 body{ background:var(--bg); color:var(--text); font-family:var(--sans); font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
-body::before{ content:""; position:fixed; inset:0; background:radial-gradient(1200px 600px at 75% -10%,rgba(162,120,200,.10),transparent 60%),radial-gradient(900px 500px at 10% 110%,rgba(126,203,206,.08),transparent 60%); opacity:.5; z-index:-2; }
+body::before{ content:""; position:fixed; inset:0; background:radial-gradient(1200px 600px at 75% -10%,rgba(162,120,200,.10),transparent 60%),radial-gradient(900px 500px at 10% 110%,rgba(126,203,206,.08),transparent 60%),url("kmillaevelyn-site/assets/bg-silksong.png") center/cover no-repeat fixed; opacity:.5; z-index:-2; }
 body::after{ content:""; position:fixed; inset:0; background:linear-gradient(180deg,rgba(13,17,23,.72),rgba(13,17,23,.94)); z-index:-1; }
 .eyebrow{ font-family:var(--mono); font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--teal); font-weight:400; }
 h1,h2,h3{ font-family:var(--serif); font-weight:400; line-height:1.12; letter-spacing:-.01em; }
@@ -48,12 +48,13 @@ section{ max-width:var(--maxw); margin:0 auto; padding:clamp(64px,9vw,128px) var
   content:""; position:absolute; left:0; right:0; top:50%; height:1px;
   background:linear-gradient(90deg,transparent 0%,rgba(126,203,206,.15) 8%,rgba(126,203,206,.6) 30%,rgba(162,120,200,.8) 50%,rgba(126,203,206,.6) 70%,rgba(126,203,206,.15) 92%,transparent 100%);
   transform:translateY(-50%);
+  animation:pulse 2.4s ease-in-out infinite;
 }
 .divider-line::after{
   content:""; position:absolute; left:0; right:0; top:50%; height:1px;
   background:linear-gradient(90deg,transparent 0%,rgba(126,203,206,.08) 10%,rgba(126,203,206,.35) 35%,rgba(162,120,200,.5) 50%,rgba(126,203,206,.35) 65%,rgba(126,203,206,.08) 90%,transparent 100%);
   transform:translateY(-50%); filter:blur(3px);
-  animation:dividerGlow 3s ease-in-out infinite;
+  animation:pulse 2.4s ease-in-out infinite;
 }
 .divider-gem{
   position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
@@ -144,7 +145,7 @@ footer{ border-top:1px solid var(--border); text-align:center; padding:40px var(
 </head>
 <body>
 <header class="hero">
-  <img class="hero-banner" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:1a3a3d,100:7ecbce&height=200&section=header&text=Kamilla%20de%20Paula&fontSize=42&fontColor=7ecbce&fontAlignY=40&desc=Supply%20Chain%20%C2%B7%20Dados%20%C2%B7%20IA%20Aplicada&descSize=15&descAlignY=60&animation=fadeIn" alt="Kamilla de Paula · Supply Chain · Data · AI" />
+  <img class="hero-banner" src="kmillaevelyn-site/assets/banner.png" alt="Kamilla de Paula · Supply Chain · Data · AI" />
   <span class="eyebrow">◆ &nbsp; hallownest &nbsp; ◆</span>
   <h1>Kamilla <span class="accent">de Paula</span></h1>
   <p class="hero-sub">SUPPLY&nbsp;CHAIN&nbsp;&nbsp;·&nbsp;&nbsp;DATA&nbsp;&nbsp;·&nbsp;&nbsp;IA&nbsp;APLICADA</p>
@@ -171,7 +172,7 @@ footer{ border-top:1px solid var(--border); text-align:center; padding:40px var(
       <div class="avatar-flip">
         <div class="avatar-flip-inner">
           <div class="avatar-front">
-            <img src="assets/perfil.jpg" alt="Kamilla de Paula" class="avatar-mono" />
+            <img src="kmillaevelyn-site/assets/avatar.png" alt="Kamilla de Paula — avatar" />
           </div>
           <div class="avatar-back">
             <img src="assets/perfil.jpg" alt="Kamilla de Paula" />
