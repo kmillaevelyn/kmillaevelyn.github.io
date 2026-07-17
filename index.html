@@ -231,6 +231,73 @@ footer{ border-top:1px solid var(--border); text-align:center; padding:40px var(
   </div>
 </section>
 <div class="divider-line"><div class="divider-gem"></div></div>
+<section class="nb-arq" id="arquivo">
+  <style>
+    .nb-arq{max-width:1060px;margin:4.5rem auto;padding:0 1.25rem;font-family:'Space Grotesk',system-ui,sans-serif;color:#c9d1d9}
+    .nb-arq h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(1.6rem,3.4vw,2.2rem);color:#e6edf3;margin:0 0 .4rem}
+    .nb-arq h2 em{font-style:normal;color:#7ecbce}
+    .nb-arq .nb-arq-sub{font-size:.95rem;color:#8a9bb0;margin:0 0 2.2rem;max-width:62ch}
+    .nb-arq details{border:1px solid #21262d;border-radius:10px;background:#10161d;margin-bottom:.85rem;overflow:hidden;transition:border-color .25s}
+    .nb-arq details[open]{border-color:#2a4a4d}
+    .nb-arq summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:.8rem;padding:1rem 1.2rem;user-select:none}
+    .nb-arq summary::-webkit-details-marker{display:none}
+    .nb-arq summary .nb-arq-gema{color:#7ecbce;font-size:.7rem;animation:nbArqPulse 2.6s ease-in-out infinite}
+    @keyframes nbArqPulse{0%,100%{opacity:.45}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.nb-arq summary .nb-arq-gema{animation:none;opacity:.8}}
+    .nb-arq summary h3{margin:0;font-size:1.02rem;font-weight:500;color:#e6edf3;flex:1}
+    .nb-arq summary .nb-arq-qtd{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#6fcfb3;background:#12211d;border:1px solid #1d3a30;border-radius:99px;padding:.15rem .6rem;white-space:nowrap}
+    .nb-arq summary .nb-arq-seta{color:#8a9bb0;font-size:.8rem;transition:transform .25s}
+    .nb-arq details[open] .nb-arq-seta{transform:rotate(90deg);color:#7ecbce}
+    .nb-arq ul{list-style:none;margin:0;padding:.2rem 1.2rem 1.1rem}
+    .nb-arq li{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .9rem;padding:.55rem 0;border-top:1px solid #1a2029}
+    .nb-arq li code{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:#7ecbce;background:none;padding:0}
+    .nb-arq li span{font-size:.85rem;color:#8a9bb0;flex:1;min-width:220px}
+    .nb-arq li a{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:#a278c8;text-decoration:none;white-space:nowrap;border-bottom:1px dotted #4a3a5e}
+    .nb-arq li a:hover{color:#c4a0e8;border-color:#a278c8}
+  </style>
+  <h2>Arquivo completo <em>·</em> além da vitrine</h2>
+  <p class="nb-arq-sub">Os projetos acima são a vitrine. Aqui está todo o resto — <strong>22 notebooks</strong> de ML, dashboards, algoritmos implementados do zero e a base interdisciplinar do BCTec. Nada em rascunho, nada omitido: cada linha abre código real no GitHub.</p>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Machine Learning &amp; IA</h3><span class="nb-arq-qtd">3 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>redes-neurais-mlp-credit-default</code><span>MLP com GridSearchCV sobre inadimplência de cartão (UCI) · F1-macro 0,67</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/01-machine-learning/redes-neurais-mlp-credit-default">ver no GitHub →</a></li>
+    <li><code>classificacao-acoes-embr3-knn</code><span>O ancestral do PETR4: alta/baixa da EMBR3 com KNN, nascido na disciplina</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/01-machine-learning/classificacao-acoes-embr3-knn">ver no GitHub →</a></li>
+    <li><code>exercicios-ia</code><span>Busca em grafos, separadores lineares e agrupamento hierárquico</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/exercicios-ia">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Algoritmos do zero — sem bibliotecas de ML</h3><span class="nb-arq-qtd">2 + 1 na vitrine</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>busca-ucs-bfs-dfs-romenia</code><span>UCS, BFS e DFS com heapq, deque e pilha — o mapa clássico de Russell &amp; Norvig</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/06-algoritmos-do-zero/busca-ucs-bfs-dfs-romenia">ver no GitHub →</a></li>
+    <li><code>regressao-linear-populacao-pouso-alegre</code><span>Mínimos quadrados na mão sobre a população da minha cidade</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/06-algoritmos-do-zero/regressao-linear-populacao-pouso-alegre">ver no GitHub →</a></li>
+    <li><code>knn-do-zero-validacao-cruzada</code><span>O terceiro da série está na vitrine: KNN em NumPy puro · 99,12% no EMNIST</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/01-machine-learning/knn-do-zero-validacao-cruzada">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Dashboards &amp; Visualização</h3><span class="nb-arq-qtd">3 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>pi3-dashboard-vagas-linkedin</code><span>Mineração de vagas do LinkedIn: hard skills, soft skills e ferramentas</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/02-dashboards-visualizacao/dashboard-mercado-vagas-linkedin">ver no GitHub →</a></li>
+    <li><code>dashboard-saude-academica</code><span>Horas de estudo × nota, ansiedade em provas, sono e extracurriculares</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/02-dashboards-visualizacao/dashboard-saude-academica">ver no GitHub →</a></li>
+    <li><code>dashboard-habitos-estudantes</code><span>EDA interativa com seleção dinâmica de variáveis</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/02-dashboards-visualizacao/dashboard-habitos-estudantes">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Bancos de Dados &amp; SQL</h3><span class="nb-arq-qtd">2 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>bd-consultas-sql-ideb</code><span>12 consultas sobre a base do IDEB: filtros, agregações e subqueries</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/bd-consultas-sql-ideb">ver no GitHub →</a></li>
+    <li><code>bd-mysql-campeonato</code><span>Modelagem com chave estrangeira: partidas + estatísticas por intervalo</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/bd-mysql-campeonato">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Cálculo Numérico</h3><span class="nb-arq-qtd">2 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>calcnum-raizes-sistemas-integracao</code><span>Ponto fixo, Newton-Raphson e bisseção · Jacobi vs. Seidel · trapézios vs. Simpson</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/calcnum-raizes-sistemas-integracao">ver no GitHub →</a></li>
+    <li><code>calcnum-rk4-euler-eletricas</code><span>Runge-Kutta 4ª ordem vs. Euler + diagramas de fluxo de potência (BCTEC022)</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/calcnum-rk4-euler-eletricas">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Engenharia &amp; Ciências</h3><span class="nb-arq-qtd">6 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>ciencias-eletricas</code><span>Circuitos, Lei de Ohm, potencial elétrico e resistência</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/ciencias-eletricas">ver no GitHub →</a></li>
+    <li><code>fisica-mecanica</code><span>Estática: diagramas de corpo livre, cabos, apoios, reações e momento</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/fisica-mecanica">ver no GitHub →</a></li>
+    <li><code>fisica-m4p1-motor-gasolina</code><span>Coeficiente politrópico por busca aleatória convergente + consumo</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/fisica-m4p1-motor-gasolina">ver no GitHub →</a></li>
+    <li><code>fisica-m4p2-onibus-arrasto</code><span>Arrasto aerodinâmico e potências combinadas de um double-decker</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/fisica-m4p2-onibus-arrasto">ver no GitHub →</a></li>
+    <li><code>quimica-curva-calibracao-faas</code><span>Curva de calibração para ferro por FAAS: regressão, R² e mg/kg</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/quimica-curva-calibracao-faas">ver no GitHub →</a></li>
+    <li><code>graficos-parabolas-interativo</code><span>Famílias de parábolas com entrada interativa de coeficientes</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/08-academico/graficos-parabolas-interativo">ver no GitHub →</a></li>
+  </ul></details>
+  <details><summary><span class="nb-arq-gema">◆</span><h3>Fundamentos — onde tudo começou</h3><span class="nb-arq-qtd">4 notebooks</span><span class="nb-arq-seta">▶</span></summary><ul>
+    <li><code>fundamentos-python-01</code><span>O primeiro programa em Python — abril de 2024, o ponto de partida</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/07-fundamentos">ver no GitHub →</a></li>
+    <li><code>fundamentos-python-02</code><span>Lógica e estruturas de dados</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/07-fundamentos">ver no GitHub →</a></li>
+    <li><code>fundamentos-python-03</code><span>Funções e composição</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/07-fundamentos">ver no GitHub →</a></li>
+    <li><code>progcdados-arquivos-pandas</code><span>Arquivos txt/csv e as primeiras análises com pandas</span><a href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/07-fundamentos">ver no GitHub →</a></li>
+  </ul></details>
+</section>
+
+
+<div class="divider-line"><div class="divider-gem"></div></div>
 <section id="numeros" class="reveal">
   <div class="section-head">
     <span class="eyebrow">// em números</span>
