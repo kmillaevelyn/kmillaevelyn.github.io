@@ -25,8 +25,8 @@ body::before{ content:""; position:fixed; inset:0; background:radial-gradient(12
 body::after{ content:""; position:fixed; inset:0; background:linear-gradient(180deg,rgba(13,17,23,.72),rgba(13,17,23,.94)); z-index:-1; }
 .eyebrow{ font-family:var(--mono); font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--teal); font-weight:400; }
 h1,h2,h3{ font-family:var(--serif); font-weight:400; line-height:1.12; letter-spacing:-.01em; }
-section{ max-width:var(--maxw); margin:0 auto; padding:clamp(64px,9vw,128px) var(--gut); }
-.hero{ min-height:100vh; display:flex; flex-direction:column; justify-content:center; position:relative; max-width:var(--maxw); margin:0 auto; padding:0 var(--gut); }
+section{ max-width:var(--maxw); margin:0 auto; padding:clamp(48px,7vw,88px) var(--gut); }
+.hero{ min-height:100vh; display:flex; flex-direction:column; justify-content:flex-start; position:relative; max-width:var(--maxw); margin:0 auto; padding:clamp(32px,7vh,80px) var(--gut) 0; }
 .hero-banner{ width:100%; border-radius:14px; border:1px solid var(--border); margin-bottom:48px; box-shadow:0 0 0 1px rgba(126,203,206,.06),0 30px 80px -40px rgba(0,0,0,.9); opacity:0; animation:fadeUp 1s .1s forwards; }
 .hero .eyebrow{ opacity:0; animation:fadeUp .8s .3s forwards; }
 .hero h1{ font-size:clamp(2.6rem,8vw,5.2rem); margin:.2em 0 .15em; opacity:0; animation:fadeUp .9s .45s forwards; }
@@ -123,7 +123,7 @@ section{ max-width:var(--maxw); margin:0 auto; padding:clamp(64px,9vw,128px) var
 .project .body .desc{ color:var(--text-dim); font-size:.92rem; margin-top:6px; }
 .project .arrow{ font-family:var(--mono); color:var(--text-faint); transition:all .4s ease; }
 .project:hover .arrow{ color:var(--teal); transform:translate(4px,-4px); }
-.stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:18px; text-align:center; }
+.stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; text-align:center; }
 .stat{ padding:36px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; }
 .stat .n{ font-family:var(--serif); font-size:clamp(2.4rem,6vw,3.4rem); background:linear-gradient(120deg,var(--teal),var(--purple)); -webkit-background-clip:text; background-clip:text; color:transparent; line-height:1; }
 .stat .l{ font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text-dim); margin-top:12px; }
@@ -172,7 +172,7 @@ footer{ position:relative; overflow:hidden; border-top:none !important; padding:
 <header class="hero">
   <img class="hero-banner" src="kmillaevelyn-site/assets/banner.png" alt="Kamilla de Paula · Supply Chain · Data · AI" />
   <span class="eyebrow">◆ &nbsp; hallownest &nbsp; ◆</span>
-  <h1>Kamilla <span class="accent">de Paula</span></h1>
+  <h1>Kamilla Evelyn <span class="accent">de Paula</span></h1>
   <p class="hero-sub">SUPPLY&nbsp;CHAIN&nbsp;&nbsp;·&nbsp;&nbsp;DATA&nbsp;&nbsp;·&nbsp;&nbsp;IA&nbsp;APLICADA</p>
   <div class="hero-cta">
     <a class="btn btn-primary" href="#projetos">ver projetos</a>
@@ -252,7 +252,7 @@ footer{ position:relative; overflow:hidden; border-top:none !important; padding:
     <a class="project" href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/02-dashboards-visualizacao/analise-grafos-clustering" target="_blank" rel="noopener"><span class="idx">04</span><div class="body"><span class="area">NLP · Clustering</span><h3>Clustering de Notícias com NLP</h3><p class="desc">Pipeline de NLP não supervisionado: TF-IDF + K-Means com validação por Cotovelo e Silhouette Score para descobrir os tópicos ocultos em notícias em português.</p></div><span class="arrow">↗</span></a>
     <a class="project" href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/04-engenharia-de-produto/hidrotech" target="_blank" rel="noopener"><span class="idx">05</span><div class="body"><span class="area">Produto · IoT · Indústria 4.0</span><h3>Hidrotech</h3><p class="desc">Chuveiro inteligente IoT: desenvolvimento de produto completo mais simulador em Python de consumo, economia e payback que quantifica a proposta de valor.</p></div><span class="arrow">↗</span></a>
     <a class="project" href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/05-supply-chain-pcm" target="_blank" rel="noopener"><span class="idx">06</span><div class="body"><span class="area">Supply Chain · PCM · Indústria</span><h3>Frameworks & Resultados na Indústria</h3><p class="desc">Framework autoral de otimização de fluxo integrado (PCM, Compras e Engenharia) e cases reais de compras com reduções de 10% a 55% em custos. Onde dados viram decisão operacional.</p></div><span class="arrow">↗</span></a>
-    <a class="project" href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/03-nlp/analise-sentimento-b2w" target="_blank" rel="noopener"><span class="idx">07</span><div class="body"><span class="area">NLP · Machine Learning</span><h3>Análise de Sentimento · B2W</h3><p class="desc">Classificação de sentimento em 10.000 avaliações reais da B2W/Americanas com regressão logística e CountVectorizer — 89,9% de acurácia, superando o baseline léxico.</p></div><span class="arrow">↗</span></a>
+    <a class="project" href="https://github.com/kmillaevelyn/data-science-portfolio/tree/main/03-nlp/analise-sentimento-b2w" target="_blank" rel="noopener"><span class="idx">07</span><div class="body"><span class="area">NLP · Machine Learning</span><h3>Análise de Sentimento · B2W</h3><p class="desc">Classificação de sentimento em 10.000 avaliações reais da B2W/Americanas com regressão logística e CountVectorizer — 89,9% de acurácia, superando o baseline léxico.</p></div><span class="arrow">↗</span></a><a class="project" href="https://lucasknd.github.io/Projeto-Universitario-UNIFEI/" target="_blank" rel="noopener"><span class="idx">08</span><div class="body"><span class="area">Web Design · Direção Conceitual</span><h3>Site Institucional · BCTec UNIFEI</h3><p class="desc">Direção conceitual e design de minha autoria para a landing page do curso BCTec, desenvolvida em parceria com Lucas (LucasKND). Apresenta o curso, dois experimentos de física — caracterização de LEDs e pêndulo/MHS — e o encontro dos alunos. HTML, CSS e JavaScript.</p></div><span class="arrow">↗</span></a>
   </div>
 </section>
 <div class="divider-line"><div class="divider-gem"></div></div>
